@@ -1,24 +1,26 @@
-<block class="header">
+<view class="header">
   <view class="title">
     Mini Game Săn Sale
   </view>
   <view class="description">
     Tạo chương trình săn sale cho khách hàng của bạn bằng Mini Game.
   </view>
-</block>
+</view>
 
-<block class="button-group">
-  <button class="button-1">
-    Tạo chương trình
-  </button class="button-2">
-  <button>
-    Chương trình đã tạo
-  </button>
-  <button class="button-3">
-    Tham gia bằng mã
-  </button>
-</block>
+<view class="blank-5"></view>
+<button class="button">
+  Tạo chương trình
+</button>
+<view class="blank-5"></view>
+<button class="button">
+  Chương trình đã tạo
+</button>
+<view class="blank-5"></view>
+<button class="button">
+  Tham gia bằng mã
+</button>
 
+<view class="blank-7"></view>
 <view class="detail">
   Thông tin chi tiết
 </view>

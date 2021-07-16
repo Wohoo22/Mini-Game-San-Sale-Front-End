@@ -1,5 +1,51 @@
-.button-group {
+.header {
+  background-color: #367cff;
   color:white;
   text-align:center;
-  background-color:367cff
+  height: 35%;
+  background-image: url("https://i.ibb.co/5GqtKCZ/thumnail.jpg");
+  background-size: contain;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: bold;
+  padding-top: 15%;
+}
+
+.description {
+  font-size: 16.5px;
+  padding-top: 6%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 6%;
+}
+
+.button {
+  color:white;
+  text-align:center;
+  background-color: #367cff;
+  margin: auto;
+  display: block;
+  font-size: 100%;
+  width:50%;
+  border-radius: 13px;
+  height: 10%;
+}
+
+.blank-5 {
+  display: block;
+  height: 5%;
+}
+
+.blank-7 {
+  display: block;
+  height: 7%;
+}
+
+
+.detail {
+  text-align:center;
+  color: #367cff;
+  text-decoration: underline;
 }
