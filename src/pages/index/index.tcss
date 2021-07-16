@@ -8,13 +8,14 @@
 }
 
 .title {
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 27px;
   font-weight: bold;
   padding-top: 15%;
 }
 
 .description {
-  font-size: 16.5px;
+  font-size: 16px;
   padding-top: 6%;
   padding-right: 5%;
   padding-left: 5%;
