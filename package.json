@@ -1,0 +1,8 @@
+{
+  "name": "mini-game-san-sale",
+  "version": "0.1.0",
+  "tiki": {
+    "appIdentifier": "abc.def",
+    "buildNumber": 1
+  }
+}
