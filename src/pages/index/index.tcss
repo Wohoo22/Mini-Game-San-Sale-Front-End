@@ -1,1 +1,5 @@
-view { }
+.button-group {
+  color:white;
+  text-align:center;
+  background-color:367cff
+}
