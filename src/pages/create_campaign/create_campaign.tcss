@@ -16,11 +16,12 @@
 }
 
 .input-box {
-  width:98%;
+  margin: auto;
+  display: block;
+  width: 98%;
 }
 
 .input-box-container {
-  padding-left:3%;
 }
 
 .need-setting {

@@ -1,6 +1,8 @@
 App({
   onLaunch(options) {
-    console.log('App onLaunch');
+    // my.navigateTo({
+    //   url: "/pages/pick_game/pick_game"
+    // });
   },
   onShow(options) {
   },

@@ -1,0 +1,11 @@
+<view class="blank-2"></view>
+
+<view class="label">
+  TÌM KIẾM MINI GAME
+</view>
+
+<view class="blank-1"></view>
+
+<input class="search-box" placeholder="🔍 Nhập tên mini game">
+
+</input>

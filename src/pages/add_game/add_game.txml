@@ -16,7 +16,7 @@
 
 <view class="blank-1"></view>
 
-<button class="pick-game">
+<button class="pick-game" onTap="pickGame">
   Chọn game
 </button>
 

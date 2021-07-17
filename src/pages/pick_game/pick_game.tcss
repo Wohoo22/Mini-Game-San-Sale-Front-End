@@ -1,0 +1,7 @@
+@import "../common.tcss";
+
+.search-box {
+  margin: auto;
+  display: block;
+  width: 98%;
+}
