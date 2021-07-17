@@ -47,9 +47,9 @@
 <view class="blank-2"></view>
 
 <block tiki:for="{{[0, 1, 2]}}" class="game-list">
-  <view class="game-list-element">
+  <view class="chosen-item">
     
-    <label class="game-name">
+    <label class="chosen-item-label">
       Đuổi hình bắt chữ {{item}}
     </label>
 

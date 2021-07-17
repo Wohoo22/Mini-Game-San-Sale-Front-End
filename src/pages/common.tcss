@@ -1,3 +1,22 @@
+.label {
+  padding-left: 3%;
+  color:#696969;
+}
+
+.chosen-item {
+  background-color: #e0e0e0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.chosen-item-label {
+  padding-left: 3%;
+}
+
+.icon-arrow {
+  float: right;
+}
+
 .blank-1 {
 display: block;
 height: 1%;

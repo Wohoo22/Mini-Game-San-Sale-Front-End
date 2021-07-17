@@ -1,0 +1,29 @@
+<view class="blank-2"></view>
+
+<view class="label">
+  MINI GAME ĐANG CHỌN
+</view>
+
+<view class="blank-2"></view>
+
+<view class="chosen-item">
+    <label class="chosen-item-label">
+      Đuổi hình bắt chữ
+    </label>
+    <icon type="arrow_right" class="icon-arrow" color="grey"/>
+  </view>
+
+<view class="blank-5"></view>
+
+<view class="label">
+  PHẦN THƯỞNG KHI THẮNG (MÃ GIẢM GIÁ)
+</view>
+
+<view class="blank-2"></view>
+
+<view class="chosen-item">
+    <label class="chosen-item-label">
+      Đuổi hình bắt chữ
+    </label>
+    <icon type="arrow_right" class="icon-arrow" color="grey"/>
+  </view>

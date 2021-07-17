@@ -1,0 +1,7 @@
+@import "../common.tcss";
+
+.label {
+  padding-left: 3%;
+  color:#696969;
+}
+

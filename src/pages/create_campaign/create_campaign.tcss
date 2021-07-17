@@ -23,20 +23,6 @@
   padding-left:3%;
 }
 
-.game-list-element {
-  background-color: #e0e0e0;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.game-name {
-  padding-left: 3%;
-}
-
-.icon-arrow {
-  float: right;
-}
-
 .need-setting {
   font-size: 11px;
   float: right;
