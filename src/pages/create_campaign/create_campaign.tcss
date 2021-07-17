@@ -38,37 +38,3 @@
   background-color:#6ed484;
   border-radius:10px;
 }
-
-.add-game-btn {
-  border-radius:100px;
-  background-color: #367cff;
-  border-color:#7dc0ff;
-  display: inline;
-  height: 3%;
-}
-
-.add-game-btn-container {
-  padding-left: 3%;
-}
-
-.add-game-label {
-  display: inline;
-  font-size: 80%;
-  float: right;
-  padding-left: 10px;;
-}
-
-.create-button {
-  background-color: #367cff;
-  border-radius:10px;
-  margin: auto;
-  width: 86%;
-  font-size: 120%;
-}
-
-.create-button-container {
-  background-color: #e0e0e0;
-  padding-top:3%;
-  padding-bottom:5%;
-  bottom: 0;
-}

@@ -1,3 +1,37 @@
+.finish-button {
+  background-color: #367cff;
+  border-radius:10px;
+  margin: auto;
+  width: 86%;
+  font-size: 120%;
+}
+
+.finish-button-container {
+  background-color: #e0e0e0;
+  padding-top:3%;
+  padding-bottom:5%;
+  bottom: 0;
+}
+
+.add-btn {
+  border-radius:100px;
+  background-color: #367cff;
+  border-color:#7dc0ff;
+  display: inline;
+  height: 3%;
+}
+
+.add-btn-container {
+  padding-left: 3%;
+}
+
+.add-label {
+  display: inline;
+  font-size: 80%;
+  float: right;
+  padding-left: 10px;;
+}
+
 .label {
   padding-left: 3%;
   color:#696969;
