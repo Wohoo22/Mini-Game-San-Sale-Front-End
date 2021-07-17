@@ -6,6 +6,90 @@
 
 <view class="blank-1"></view>
 
-<input class="search-box" placeholder="🔍 Nhập tên mini game">
+<input class="search-box" placeholder="🔍 Nhập tên mini game"></input>
 
-</input>
+<view class="filter-btn-container">
+  <button class="filter-btn">Lượt dùng</button>
+  <button class="filter-btn">Thể loại</button>
+  <button class="filter-btn">Lượt thích</button>
+</view>
+
+<view class="blank-2"></view>
+
+<button class="search-btn">Tìm kiếm</button>
+
+<view class="blank-2"></view>
+
+<view class="game-container">
+  
+  <image src="https://w7.pngwing.com/pngs/295/458/png-transparent-snake-computer-icons-snake-game-animals-grass.png"
+  class="thumbnail"></image>
+
+  <view class="game-info">
+
+    <view>
+      <label class="game-info-label">Game:</label> <label>Snake</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Lượt dùng:</label> <label>1243</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Lượt thích:</label> <label>1243</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Lượt không thích:</label> <label>123</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Thể loại:</label> <label>tương tác, hành động</label>
+    </view>
+
+  </view>
+
+</view>
+
+
+<view class="game-container">
+  
+  <image src="https://pbs.twimg.com/media/Edlq-09UEAAbOVy.jpg"
+  class="thumbnail"></image>
+
+  <view class="game-info">
+
+    <view>
+      <label class="game-info-label">Game:</label> <label>Mario</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Lượt dùng:</label> <label>1243</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Lượt thích:</label> <label>1243</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Lượt không thích:</label> <label>123</label>
+    </view>
+
+    <view>
+      <label class="game-info-label">Thể loại:</label> <label>tương tác, hành động</label>
+    </view>
+
+  </view>
+
+</view>
+
+
+<view>
+  <checkbox disabled/>
+</view>
+
+<view class="blank-7"></view>
+
+<view class="finish-button-container">
+  <button class="finish-button">Xong</button>
+</view>

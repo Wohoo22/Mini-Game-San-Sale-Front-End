@@ -5,3 +5,52 @@
   display: block;
   width: 98%;
 }
+
+.filter-btn-container {
+  margin-top: 2.6%;
+}
+
+.filter-btn {
+  color: black;
+  background-color: white;
+  border-color: #878787;
+  display: inline;
+  margin: auto 3.7%;
+  font-size:90%;
+  border-radius: 10px;
+}
+
+.search-btn {
+  margin: auto;
+  background-color: #367cff;
+  border-radius: 150px;
+  font-size:90%;
+  width: 60%;
+  height: 6%;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 110px;
+}
+
+.game-info {
+  display: inline;
+  float: right;
+  width:65%;
+}
+
+.game-container {
+  padding-top: 3%;
+  background-color:#e0e0e0;
+  margin-top:4%;
+  padding-bottom: 2%;
+  display: block;
+  padding-left: 3%;
+}
+
+.game-info-label {
+  margin-right: 2%;
+  color: #1a3db8;
+}
+
