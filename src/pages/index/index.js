@@ -1,12 +1,7 @@
 Page({
-  onLoad(query) {
-  },
-  onReady() {
-  },
-  onShow() {
-  },
-  onHide() {
-  },
-  onUnload() {
+  createCampaign() {
+    my.navigateTo({
+      url: '/pages/create_campaign/create_campaign'
+    })
   }
 });

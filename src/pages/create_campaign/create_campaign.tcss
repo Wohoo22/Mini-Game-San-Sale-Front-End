@@ -1,0 +1,88 @@
+@import "../common.tcss";
+
+.label {
+  padding-left: 3%;
+  color:#696969;
+}
+
+.input-area {
+  padding-top:3%;
+  background-color: #e0e0e0;
+  padding-bottom:3%;
+}
+
+.input-description {
+  padding-left: 4%;
+}
+
+.input-box {
+  width:98%;
+}
+
+.input-box-container {
+  padding-left:3%;
+}
+
+.game-list-element {
+  background-color: #e0e0e0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.game-name {
+  padding-left: 3%;
+}
+
+.icon-arrow {
+  float: right;
+}
+
+.need-setting {
+  font-size: 11px;
+  float: right;
+  color:white;
+  background-color:#fc6649;
+  border-radius:10px;
+}
+
+.done-setting {
+  font-size: 11px;
+  float: right;
+  color:white;
+  background-color:#6ed484;
+  border-radius:10px;
+}
+
+.add-game-btn {
+  border-radius:100px;
+  background-color: #367cff;
+  border-color:#7dc0ff;
+  display: inline;
+  height: 3%;
+}
+
+.add-game-btn-container {
+  padding-left: 3%;
+}
+
+.add-game-label {
+  display: inline;
+  font-size: 80%;
+  float: right;
+  padding-left: 10px;;
+}
+
+.create-button {
+  background-color: #367cff;
+  border-radius:10px;
+  margin: auto;
+  width: 86%;
+  font-size: 120%;
+}
+
+.create-button-container {
+  background-color: #e0e0e0;
+  padding-top:3%;
+  padding-bottom:5%;
+  bottom: 0;
+}

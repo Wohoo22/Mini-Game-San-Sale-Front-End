@@ -1,0 +1,86 @@
+<view class="blank-2"></view>
+
+<view class="label">
+  THỜI GIAN
+</view>
+
+<view class="blank-2"></view>
+
+<view class="input-area">
+
+  <view class="input-box-container">
+  <input type="text" placeholder="Ngày hết hạn" class="input-box"></input>
+  </view>
+
+  <view class="input-description">
+    Theo định dạng "ngày-tháng-năm"
+  </view>
+
+</view>
+
+<view class="blank-5"></view>
+
+<view class="label">
+  TÊN CHƯƠNG TRÌNH
+</view>
+
+<view class="blank-2"></view>
+
+<view class="input-area">
+
+  <view class="input-box-container">
+  <input type="text" placeholder="Nhập tên" class="input-box"></input>
+  </view>
+
+  <view class="input-description">
+    Tên chương trình sẽ được hiển thị với người chơi
+  </view>
+
+</view>
+
+<view class="blank-5"></view>
+
+<view class="label">
+  DANH SÁCH MINI GAME
+</view>
+
+<view class="blank-2"></view>
+
+<block tiki:for="{{[0, 1, 2]}}" class="game-list">
+  <view class="game-list-element">
+    
+    <label class="game-name">
+      Đuổi hình bắt chữ {{item}}
+    </label>
+
+    <icon type="arrow_right" class="icon-arrow" color="grey"/>
+
+    <label tiki:if="{{item == 0}}" class="need-setting">
+      Bạn chưa cài đặt cho game {{item}}
+    </label>
+
+    <label tiki:if="{{item != 0}}" class="done-setting">
+      Đã cài đặt cho game {{item}}
+    </label>
+
+  </view>
+
+  <view class="blank-1"></view>
+</block>
+
+<view class="blank-1"></view>
+
+<view class="add-game-btn-container">
+  <button class="add-game-btn">
+    <view class="add-game-label">
+      Thêm game
+    </view>
+    <icon type="plus" class="icon-arrow" color="white" size="20"/>
+  </button>
+</view>
+
+<view class="blank-7"></view>
+
+<view class="create-button-container">
+  <button class="create-button">Tạo</button>
+</view>

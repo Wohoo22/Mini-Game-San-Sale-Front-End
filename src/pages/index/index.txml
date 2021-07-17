@@ -8,15 +8,15 @@
 </view>
 
 <view class="blank-5"></view>
-<button class="button">
+<button class="button" onTap="createCampaign">
   Tạo chương trình
 </button>
 <view class="blank-5"></view>
-<button class="button">
+<button class="button" onTap="createdCampaign">
   Chương trình đã tạo
 </button>
 <view class="blank-5"></view>
-<button class="button">
+<button class="button" onTap="joinCampaign">
   Tham gia bằng mã
 </button>
 

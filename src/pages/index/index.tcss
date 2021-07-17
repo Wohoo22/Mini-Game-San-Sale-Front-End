@@ -1,3 +1,5 @@
+@import "../common.tcss";
+
 .header {
   background-color: #367cff;
   color:white;
@@ -33,17 +35,6 @@
   border-radius: 13px;
   height: 10%;
 }
-
-.blank-5 {
-  display: block;
-  height: 5%;
-}
-
-.blank-7 {
-  display: block;
-  height: 7%;
-}
-
 
 .detail {
   text-align:center;
