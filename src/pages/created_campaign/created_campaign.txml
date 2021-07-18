@@ -50,7 +50,7 @@
 <block tiki:for="{{[8, 1, 2]}}">
   <view class="line-label">GAME</view>
 
-  <view class="chosen-item" style="background-color: #fff0d1; border-bottom: 1px solid #d1d1d1;">
+  <view class="chosen-item" style="background-color: #fff0de; border-bottom: 1px solid #d1d1d1;">
     <label class="chosen-item-label" >
       Snake {{item}}
     </label>
