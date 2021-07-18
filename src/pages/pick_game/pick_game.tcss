@@ -8,6 +8,7 @@
 
 .filter-btn-container {
   margin-top: 2.6%;
+  margin-left: 2%;
 }
 
 .filter-btn {
@@ -15,9 +16,9 @@
   background-color: white;
   border-color: #878787;
   display: inline;
-  margin: auto 3.7%;
   font-size:90%;
   border-radius: 10px;
+  width: 33%;
 }
 
 .search-btn {
@@ -31,22 +32,21 @@
 
 .thumbnail {
   height: 100px;
-  width: 110px;
+  width: 30%;
+  display: inline;
+  float: left;
 }
 
 .game-info {
   display: inline;
+  width:69%;
   float: right;
-  width:65%;
 }
 
 .game-container {
-  padding-top: 3%;
   background-color:#e0e0e0;
-  margin-top:4%;
-  padding-bottom: 2%;
   display: block;
-  padding-left: 3%;
+  margin-top: 3%;
 }
 
 .game-info-label {

@@ -18,7 +18,7 @@
 
 <button class="search-btn">Tìm kiếm</button>
 
-<view class="blank-2"></view>
+<view class="blank-5"></view>
 
 <view class="game-container">
   
@@ -50,6 +50,18 @@
   </view>
 
 </view>
+
+<view class="blank-5"></view>
+
+<view class="add-btn-container">
+  <button class="add-btn" onTap="addGame">
+    <view class="add-label">
+      Chọn
+    </view>
+    <icon type="success" class="icon-arrow" color="white" size="20"/>
+  </button>
+</view>
+<view class="blank-7"></view>
 
 
 <view class="game-container">
@@ -83,13 +95,13 @@
 
 </view>
 
+<view class="blank-5"></view>
 
-<view>
-  <checkbox disabled/>
-</view>
-
-<view class="blank-7"></view>
-
-<view class="finish-button-container">
-  <button class="finish-button">Xong</button>
+<view class="add-btn-container">
+  <button class="add-btn" onTap="addGame">
+    <view class="add-label">
+      Chọn
+    </view>
+    <icon type="success" class="icon-arrow" color="white" size="20"/>
+  </button>
 </view>
