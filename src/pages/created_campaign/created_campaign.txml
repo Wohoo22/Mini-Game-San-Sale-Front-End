@@ -50,12 +50,23 @@
 <block tiki:for="{{[8, 1, 2]}}">
   <view class="line-label">GAME</view>
 
-  <view class="chosen-item" style="background-color: white;">
+  <view class="chosen-item" style="background-color: white; border-bottom: 1px solid #d1d1d1;">
     <label class="chosen-item-label" >
       Snake {{item}}
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
   </view>
+
+  <view class="blank-1"></view>
+  <view class="del-btn-container">
+    <button class="del-btn" style="background-color: #6bdb8d; border-color: #6bdb8d;">
+      <view class="del-label">
+        Xóa game
+      </view>
+      <icon type="minus" class="icon-arrow" color="white" size="20"/>
+    </button>
+  </view>
+  <view class="blank-1"></view>
 
   <view class="line-label">PHẦN THƯỞNG KHI THẮNG</view>
 
@@ -66,6 +77,17 @@
         </label>
         <icon type="arrow_right" class="icon-arrow" color="grey"/>
       </view>
+
+      <view class="blank-1"></view>
+      <view class="del-btn-container">
+        <button class="del-btn">
+          <view class="del-label">
+            Xóa
+          </view>
+          <icon type="minus" class="icon-arrow" color="white" size="20"/>
+        </button>
+      </view>
+      <view class="blank-1"></view>
   </block>
 
   
@@ -79,6 +101,17 @@
         </label>
         <icon type="arrow_right" class="icon-arrow" color="grey"/>
       </view>
+
+      <view class="blank-1"></view>
+      <view class="del-btn-container">
+        <button class="del-btn">
+          <view class="del-label">
+            Xóa
+          </view>
+          <icon type="minus" class="icon-arrow" color="white" size="20"/>
+        </button>
+      </view>
+      <view class="blank-1"></view>
   </block>
 
   <view class="blank-4"></view>
