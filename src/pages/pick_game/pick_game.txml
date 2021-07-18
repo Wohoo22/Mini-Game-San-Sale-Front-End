@@ -22,7 +22,7 @@
 
 <view class="game-container">
   
-  <image src="https://w7.pngwing.com/pngs/295/458/png-transparent-snake-computer-icons-snake-game-animals-grass.png"
+  <image src="https://cdn.tutsplus.com/mobile/uploads/legacy/Corona-SDK_Build-A-Snake-Game/2/1.png"
   class="thumbnail"></image>
 
   <view class="game-info">
@@ -51,7 +51,7 @@
 
 </view>
 
-<view class="blank-5"></view>
+<view class="blank-17"></view>
 
 <view class="add-btn-container">
   <button class="add-btn" onTap="addGame">
@@ -61,6 +61,7 @@
     <icon type="success" class="icon-arrow" color="white" size="20"/>
   </button>
 </view>
+
 <view class="blank-7"></view>
 
 
@@ -95,7 +96,7 @@
 
 </view>
 
-<view class="blank-5"></view>
+<view class="blank-17"></view>
 
 <view class="add-btn-container">
   <button class="add-btn" onTap="addGame">
@@ -105,3 +106,9 @@
     <icon type="success" class="icon-arrow" color="white" size="20"/>
   </button>
 </view>
+
+<view class="blank-4"></view>
+
+<button class="search-btn">Tải thêm</button>
+
+<view class="blank-3"></view>
