@@ -5,7 +5,8 @@
         "pages/add_game/add_game",
         "pages/pick_game/pick_game",
         "pages/created_campaign_list/created_campaign_list",
-        "pages/created_campaign/created_campaign"
+        "pages/created_campaign/created_campaign",
+        "pages/input_data/input_data"
   ],
   "window": {
     "defaultTitle": "Mini Game Săn Sale"

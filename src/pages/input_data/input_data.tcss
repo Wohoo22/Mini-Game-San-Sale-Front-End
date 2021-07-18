@@ -1,0 +1,7 @@
+@import "../common.tcss";
+
+.input {
+  width: 96%;
+  margin: auto;
+  display: block;
+}

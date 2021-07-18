@@ -53,7 +53,7 @@
 
 <view class="blank-1"></view>
 <view class="add-btn-container">
-  <button class="add-btn">
+  <button class="add-btn" onTap="addPrize">
     <view class="add-label">
       Thêm phần thưởng
     </view>
@@ -93,7 +93,7 @@
 <view class="blank-1"></view>
 <view class="add-btn-container">
   <button class="add-btn">
-    <view class="add-label">
+    <view class="add-label" onTap="addPrize">
       Thêm phần thưởng
     </view>
     <icon type="plus" class="icon-arrow" color="white" size="20"/>

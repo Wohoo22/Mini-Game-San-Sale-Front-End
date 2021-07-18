@@ -1,0 +1,7 @@
+<view class="blank-3"></view>
+<view class="label">Nhập dữ liệu vào đây</view>
+<view class="blank-2"></view>
+<input class="input"></input>
+<view class="blank-4"></view>
+<button class="middle-btn">Xong</button>
+<view class="blank-3"></view>
