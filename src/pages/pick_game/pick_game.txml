@@ -16,7 +16,7 @@
 
 <view class="blank-2"></view>
 
-<button class="search-btn">Tìm kiếm</button>
+<button class="middle-btn">Tìm kiếm</button>
 
 <view class="blank-5"></view>
 
@@ -109,6 +109,6 @@
 
 <view class="blank-4"></view>
 
-<button class="search-btn">Tải thêm</button>
+<button class="middle-btn">Tải thêm</button>
 
 <view class="blank-3"></view>

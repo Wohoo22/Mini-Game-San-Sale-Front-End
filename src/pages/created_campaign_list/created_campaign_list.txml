@@ -1,0 +1,46 @@
+<view class="blank-2"></view>
+
+<view class="label">
+  Đang diễn ra
+</view>
+
+<view class="blank-2"></view>
+
+<block tiki:for="{{[0, 1, 2]}}">
+    <view class="chosen-item"  onTap="createdCampaign">
+      
+      <label class="chosen-item-label">
+        Săn sale Iphone {{item}}
+      </label>
+
+      <icon type="arrow_right" class="icon-arrow" color="grey"/>
+
+  </view>
+
+  <view class="blank-1"></view>
+</block>
+
+<view class="blank-5"></view>
+
+<view class="label">
+  Đã kết thúc
+</view>
+
+<view class="blank-2"></view>
+
+<block tiki:for="{{[0, 1, 2]}}">
+    <view class="chosen-item" onTap="createdCampaign">
+      
+      <label class="chosen-item-label">
+        Săn sale Samsung S{{item}}
+      </label>
+
+      <icon type="arrow_right" class="icon-arrow" color="grey"/>
+
+    </view>
+
+  <view class="blank-1"></view>
+</block>
+
+<view class="blank-4"></view>
+<button class="middle-btn">Tải thêm</button>

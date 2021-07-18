@@ -1,0 +1,5 @@
+@import "../common.tcss";
+
+.chosen-item:hover {
+  background-color: #c7c7c7;
+}

@@ -1,7 +1,7 @@
 App({
   onLaunch(options) {
     my.navigateTo({
-      url: "/pages/pick_game/pick_game"
+      url: "pages/add_game/add_game"
     });
   },
   onShow(options) {

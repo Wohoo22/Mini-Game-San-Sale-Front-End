@@ -1,3 +1,68 @@
+.modify-btn:hover {
+  background-color:#78b082;
+}
+
+.modify-btn {
+  border-radius:7px;
+  background-color: #82d992;
+  border-color:#82d992;
+  display: inline;
+  height: auto;
+}
+
+.modify-btn-container {
+  padding-left: 3%;
+}
+
+.modify-label {
+  display: inline;
+  font-size: 80%;
+  float: right;
+  padding-left: 10px;;
+}
+
+.del-btn:hover {
+  background-color:#c45c5c;
+}
+
+.del-btn {
+  border-radius:7px;
+  background-color: #db8a8a;
+  border-color:#db8a8a;
+  display: inline;
+  height: auto;
+}
+
+.del-btn-container {
+  padding-left: 3%;
+}
+
+.del-label {
+  display: inline;
+  font-size: 80%;
+  float: right;
+  padding-left: 10px;;
+}
+
+
+.line-label {
+  padding-left: 3%;
+  font-size: 75%;
+  background-color: #e0e0e0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+
+.middle-btn {
+  margin: auto;
+  background-color: #367cff;
+  border-radius: 150px;
+  font-size:90%;
+  width: 60%;
+  height: 6%;
+}
+
 .finish-button {
   background-color: #367cff;
   border-radius:10px;
@@ -37,10 +102,20 @@
   color:#696969;
 }
 
+.chosen-item:hover {
+  background-color: #c7c7c7;
+}
+
+
 .chosen-item {
   background-color: #e0e0e0;
   padding-top: 3%;
   padding-bottom: 3%;
+}
+
+.chosen-item-value {
+  float: right; 
+  margin-right: 2%;
 }
 
 .chosen-item-label {

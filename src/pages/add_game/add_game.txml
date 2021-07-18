@@ -37,6 +37,16 @@
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
   </view>
   <view class="blank-1"></view>
+
+  <view class="del-btn-container">
+    <button class="del-btn">
+      <view class="del-label">
+        Xóa
+      </view>
+      <icon type="minus" class="icon-arrow" color="white" size="20"/>
+    </button>
+  </view>
+  <view class="blank-1"></view>
 </block>
 
 <view class="blank-1"></view>
@@ -64,6 +74,16 @@
       GIAMGIA{{item}}K
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
+  </view>
+  <view class="blank-1"></view>
+
+  <view class="del-btn-container">
+    <button class="del-btn">
+      <view class="del-label">
+        Xóa
+      </view>
+      <icon type="minus" class="icon-arrow" color="white" size="20"/>
+    </button>
   </view>
   <view class="blank-1"></view>
 </block>

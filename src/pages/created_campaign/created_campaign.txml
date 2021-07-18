@@ -1,0 +1,91 @@
+<view class="blank-2"></view>
+
+<view class="label">
+  Thống kê
+</view>
+
+<view class="blank-2"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Lượng người chơi
+  </label>
+
+  <label class="chosen-item-value">145</label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Lượt thắng
+  </label>
+
+  <label class="chosen-item-value">45</label>
+</view>
+
+<view class="blank-1"></view>
+
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Lượt thua
+  </label>
+
+  <label class="chosen-item-value">100</label>
+</view>
+
+<view class="blank-5"></view>
+
+<view class="label">
+  Thông tin mini game
+</view>
+
+<view class="blank-2"></view>
+
+
+<block tiki:for="{{[8, 1, 2]}}">
+  <view class="line-label">GAME</view>
+
+  <view class="chosen-item" style="background-color: white;">
+    <label class="chosen-item-label" >
+      Snake {{item}}
+    </label>
+    <icon type="arrow_right" class="icon-arrow" color="grey"/>
+  </view>
+
+  <view class="line-label">PHẦN THƯỞNG KHI THẮNG</view>
+
+  <block tiki:for="{{[8, 1, 2]}}">
+      <view class="chosen-item" style="background-color: white; border-bottom: 1px solid #d1d1d1;">
+        <label class="chosen-item-label">
+          GIAMGIA{{item}}K
+        </label>
+        <icon type="arrow_right" class="icon-arrow" color="grey"/>
+      </view>
+  </block>
+
+  
+  <view class="line-label">PHẦN THƯỞNG KHI THUA</view>
+
+
+  <block tiki:for="{{[8, 1, 2]}}">
+      <view class="chosen-item" style="background-color: white; border-bottom: 1px solid #d1d1d1;">
+        <label class="chosen-item-label">
+          GIAMGIA{{item}}K
+        </label>
+        <icon type="arrow_right" class="icon-arrow" color="grey"/>
+      </view>
+  </block>
+
+  <view class="blank-4"></view>
+</block>
+
+<view class="blank-3"></view>
+
+<view class="finish-button-container">
+  <button class="finish-button">Xóa chương trình</button>
+</view>

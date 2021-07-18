@@ -12,7 +12,7 @@
   Tạo chương trình
 </button>
 <view class="blank-5"></view>
-<button class="button" onTap="createdCampaign">
+<button class="button" onTap="createdCampaignList">
   Chương trình đã tạo
 </button>
 <view class="blank-5"></view>

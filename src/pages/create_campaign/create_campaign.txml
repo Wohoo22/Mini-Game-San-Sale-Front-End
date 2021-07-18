@@ -66,6 +66,31 @@
   </view>
 
   <view class="blank-1"></view>
+
+  <view class="btn-container">
+
+    <view class="del-btn-container">
+      <button class="del-btn">
+        <view class="del-label">
+          Xóa
+        </view>
+        <icon type="minus" class="icon-arrow" color="white" size="20"/>
+      </button>
+    </view>
+
+    <view class="modify-btn-container">
+      <button class="modify-btn">
+        <view class="modify-label">
+          Cài đặt
+        </view>
+        <icon type="setting" class="icon-arrow" color="white" size="20"/>
+      </button>
+    </view>
+
+  </view>
+
+  <view class="blank-1"></view>
+
 </block>
 
 <view class="blank-1"></view>

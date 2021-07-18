@@ -1,8 +1,11 @@
 @import "../common.tcss";
 
-.label {
-  padding-left: 3%;
-  color:#696969;
+.modify-btn-container {
+ display: inline;
+}
+
+.del-btn-container {
+  display: inline;
 }
 
 .input-area {
