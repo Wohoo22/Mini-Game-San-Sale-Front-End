@@ -1,7 +1,7 @@
 <view class="blank-3"></view>
 <view class="label">Nhập dữ liệu vào đây</view>
 <view class="blank-2"></view>
-<input class="input"></input>
+<input class="input" onInput="getInput"></input>
 <view class="blank-4"></view>
-<button class="middle-btn">Xong</button>
+<button class="middle-btn" onTap="submit">Xong</button>
 <view class="blank-3"></view>

@@ -61,13 +61,15 @@ function initPickGameData() {
 // ____________ input-data
 
 var inputDataData = {
-  isSubmited: false,
-  text: ''
+  isSubmitted: false,
+  text: '',
+  meta: ''
 };
 
 function initInputDataData() {
   this.inputDataData.isSubmitted = false;
   this.inputDataData.text = '';
+  this.inputDataData.meta = '';
 }
 
 App({

@@ -29,10 +29,10 @@
 
 <view class="blank-2"></view>
 
-<block tiki:for="{{[8, 1, 2]}}">
+<block tiki:for="{{winPrizes}}">
   <view class="chosen-item">
     <label class="chosen-item-label">
-      GIAMGIA{{item}}K
+      {{item}}
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
   </view>
@@ -53,7 +53,7 @@
 
 <view class="blank-1"></view>
 <view class="add-btn-container">
-  <button class="add-btn" onTap="addPrize">
+  <button class="add-btn" onTap="addWinPrize">
     <view class="add-label">
       Thêm phần thưởng
     </view>
@@ -70,10 +70,10 @@
 
 <view class="blank-2"></view>
 
-<block tiki:for="{{[3,4,6]}}">
+<block tiki:for="{{losePrizes}}">
   <view class="chosen-item">
     <label class="chosen-item-label">
-      GIAMGIA{{item}}K
+      {{item}}
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
   </view>
@@ -93,7 +93,7 @@
 <view class="blank-1"></view>
 <view class="add-btn-container">
   <button class="add-btn">
-    <view class="add-label" onTap="addPrize">
+    <view class="add-label" onTap="addLosePrize">
       Thêm phần thưởng
     </view>
     <icon type="plus" class="icon-arrow" color="white" size="20"/>
