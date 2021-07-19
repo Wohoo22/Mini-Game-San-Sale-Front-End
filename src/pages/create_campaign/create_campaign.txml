@@ -46,21 +46,21 @@
 
 <view class="blank-2"></view>
 
-<block tiki:for="{{[0, 1, 2]}}" class="game-list">
+<block tiki:for="{{miniGames}}" class="game-list">
   <view class="chosen-item">
     
     <label class="chosen-item-label">
-      Đuổi hình bắt chữ {{item}}
+      {{item.name}}
     </label>
 
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
 
-    <label tiki:if="{{item == 0}}" class="need-setting">
-      Bạn chưa cài đặt cho game {{item}}
+    <label tiki:if="{{item.isConfigured == false}}" class="need-setting">
+      Bạn chưa cài đặt cho game
     </label>
 
-    <label tiki:if="{{item != 0}}" class="done-setting">
-      Đã cài đặt cho game {{item}}
+    <label tiki:if="{{item.isConfigured == true}}" class="done-setting">
+      Đã cài đặt cho game
     </label>
 
   </view>
