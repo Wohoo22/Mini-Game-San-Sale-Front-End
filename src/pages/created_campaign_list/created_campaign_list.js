@@ -9,11 +9,11 @@ function getData() {
   this.endedCampaigns = [];
   // fake data
   runningCampaigns.push({
-    id: '1',
+    id: '114433515252343254',
     name: 'Săn sale iphone 10'
   });
   endedCampaigns.push({
-    id: '2',
+    id: '299684950376583845',
     name: 'Săn sale samsung note 20'
   });
 
