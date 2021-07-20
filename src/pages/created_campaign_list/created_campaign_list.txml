@@ -6,11 +6,11 @@
 
 <view class="blank-2"></view>
 
-<block tiki:for="{{[0, 1, 2]}}">
+<block tiki:for="{{runningCampaigns}}">
     <view class="chosen-item"  onTap="createdCampaign">
       
       <label class="chosen-item-label">
-        Săn sale Iphone {{item}}
+        {{item.name}}
       </label>
 
       <icon type="arrow_right" class="icon-arrow" color="grey"/>
@@ -28,11 +28,11 @@
 
 <view class="blank-2"></view>
 
-<block tiki:for="{{[0, 1, 2]}}">
+<block tiki:for="{{endedCampaigns}}">
     <view class="chosen-item" onTap="createdCampaign">
       
       <label class="chosen-item-label">
-        Săn sale Samsung S{{item}}
+        {{item.name}}
       </label>
 
       <icon type="arrow_right" class="icon-arrow" color="grey"/>

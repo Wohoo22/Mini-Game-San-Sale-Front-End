@@ -1,3 +1,4 @@
+
 // ____________ create-campaign
 
 var createCampaignData = {
@@ -81,6 +82,8 @@ App({
   onShow(options) {
   },
 
+  // page data
+
   createCampaignData: createCampaignData,
   initCreateCampaignData: initCreateCampaignData,
 
@@ -91,5 +94,5 @@ App({
   initPickGameData: initPickGameData,
 
   inputDataData: inputDataData,
-  initInputDataData: initInputDataData
+  initInputDataData: initInputDataData,
 });

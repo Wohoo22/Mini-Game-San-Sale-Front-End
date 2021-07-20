@@ -1,3 +1,20 @@
+.need-setting {
+  font-size: 11px;
+  float: right;
+  color:white;
+  background-color:#fc6649;
+  border-radius:10px;
+}
+
+.done-setting {
+  font-size: 11px;
+  float: right;
+  color:white;
+  background-color:#6ed484;
+  border-radius:10px;
+}
+
+
 .modify-btn:hover {
   background-color:#78b082;
 }

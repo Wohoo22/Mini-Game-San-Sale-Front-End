@@ -55,16 +55,27 @@
       Snake {{item}}
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
+    <label class="need-setting">
+      Bạn chưa cài đặt cho game
+    </label>
   </view>
 
   <view class="blank-1"></view>
   <view class="del-btn-container">
-    <button class="del-btn" style="background-color: #78b082; border-color: #78b082;">
+    <button class="del-btn" style="background-color: #5bc7c9; border-color: #5bc7c9;">
       <view class="del-label">
         Xóa game
       </view>
       <icon type="minus" class="icon-arrow" color="white" size="20"/>
     </button>
+
+    <button class="modify-btn" style="margin-left:1%;">
+      <view class="modify-label">
+        Cài đặt
+      </view>
+      <icon type="setting" class="icon-arrow" color="white" size="20"/>
+    </button>
+
   </view>
   <view class="blank-2"></view>
 
@@ -153,6 +164,9 @@
 
 <view class="blank-5"></view>
 
+<view class="finish-button-container" style="border-bottom: 1px solid #bfbfbf;">
+  <button class="finish-button">Cập nhật chương trình</button>
+</view>
 
 <view class="finish-button-container">
   <button class="finish-button">Xóa chương trình</button>
