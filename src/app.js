@@ -80,6 +80,7 @@ var createdCampaignListData = {
 
 // ____________ created-campaign
 var createdCampaignData = {
+  id: '',
   useCnt: 0,
   winCnt: 0,
   loseCnt: 0,

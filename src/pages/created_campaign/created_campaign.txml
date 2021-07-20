@@ -1,6 +1,30 @@
 <view class="blank-2"></view>
 
 <view class="label">
+  Mã tham gia 
+</view>
+
+<view class="chosen-item">
+  <label class="chosen-item-label">
+    {{id}}
+  </label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="add-btn-container">
+  <button class="add-btn" style="background-color: #bcbd84; border-color: #bcbd84;">
+    <view class="add-label">
+      Copy
+    </view>
+    <icon type="plus" class="icon-arrow" color="white" size="20"/>
+  </button>
+</view>
+
+
+<view class="blank-5"></view>
+
+<view class="label">
   Thống kê
 </view>
 
@@ -12,7 +36,7 @@
     Lượng người chơi
   </label>
 
-  <label class="chosen-item-value">145</label>
+  <label class="chosen-item-value">{{useCnt}}</label>
 </view>
 
 <view class="blank-1"></view>
@@ -23,7 +47,7 @@
     Lượt thắng
   </label>
 
-  <label class="chosen-item-value">45</label>
+  <label class="chosen-item-value">{{winCnt}}</label>
 </view>
 
 <view class="blank-1"></view>
@@ -35,7 +59,7 @@
     Lượt thua
   </label>
 
-  <label class="chosen-item-value">100</label>
+  <label class="chosen-item-value">{{loseCnt}}</label>
 </view>
 
 <view class="blank-5"></view>
@@ -47,16 +71,19 @@
 <view class="blank-2"></view>
 
 
-<block tiki:for="{{[8, 1, 2]}}">
+<block tiki:for="{{miniGames}}">
   <view class="line-label">GAME</view>
 
   <view class="chosen-item" style="background-color: #fff0de; border-bottom: 1px solid #d1d1d1;">
     <label class="chosen-item-label" >
-      Snake {{item}}
+      {{item.name}}
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
-    <label class="need-setting">
+    <label tiki:if="{{item.isConfigured == false}}" class="need-setting">
       Bạn chưa cài đặt cho game
+    </label>
+    <label tiki:if="{{item.isConfigured == true}}" class="done-setting">
+      Đã cài đặt cho game
     </label>
   </view>
 
@@ -81,10 +108,10 @@
 
   <view class="line-label">PHẦN THƯỞNG KHI THẮNG</view>
 
-  <block tiki:for="{{[8, 1, 2]}}">
+  <block tiki:for="{{item.winPrizes}}">
       <view class="chosen-item" style="background-color: white; border-bottom: 1px solid #d1d1d1;">
         <label class="chosen-item-label">
-          GIAMGIA{{item}}K
+          {{item}}
         </label>
         <icon type="arrow_right" class="icon-arrow" color="grey"/>
       </view>
@@ -118,10 +145,10 @@
   <view class="line-label">PHẦN THƯỞNG KHI THUA</view>
 
 
-  <block tiki:for="{{[8, 1, 2]}}">
+  <block tiki:for="{{item.losePrizes}}">
       <view class="chosen-item" style="background-color: white; border-bottom: 1px solid #d1d1d1;">
         <label class="chosen-item-label">
-          GIAMGIA{{item}}K
+          {{item}}
         </label>
         <icon type="arrow_right" class="icon-arrow" color="grey"/>
       </view>
