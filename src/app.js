@@ -1,3 +1,9 @@
+// ____________ index
+
+var indexData = {
+  joinCampaignId : '',
+}
+
 
 // ____________ create-campaign
 
@@ -96,14 +102,16 @@ var createdCampaignData = {
 
 App({
   onLaunch(options) {
-    my.navigateTo({
-      url:"pages/join_campaign/join_campaign"
-    });
+    // my.navigateTo({
+    //   url:"pages/join_campaign/join_campaign"
+    // });
   },
   onShow(options) {
   },
 
   // page data
+
+  indexData: indexData,
 
   createCampaignData: createCampaignData,
   initCreateCampaignData: initCreateCampaignData,
