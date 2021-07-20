@@ -189,7 +189,7 @@
   </button>
 </view>
 
-<view class="blank-5"></view>
+<view class="blank-10"></view>
 
 <view class="finish-button-container" style="border-bottom: 1px solid #bfbfbf;">
   <button class="finish-button">Cập nhật chương trình</button>
