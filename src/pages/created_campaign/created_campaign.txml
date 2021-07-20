@@ -35,7 +35,7 @@
     Lượng người chơi
   </label>
 
-  <label class="chosen-item-value">{{useCnt}}</label>
+  <label class="chosen-item-value">{{playCnt}}</label>
 </view>
 
 <view class="blank-1"></view>

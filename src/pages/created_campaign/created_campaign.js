@@ -2,7 +2,7 @@ var app = getApp();
 
 function getData() {
   // fake data
-  app.createdCampaignData.useCnt = 150;
+  app.createdCampaignData.playCnt = 150;
   app.createdCampaignData.winCnt = 100;
   app.createdCampaignData.loseCnt = 50;
   app.createdCampaignData.miniGames = [];
@@ -27,7 +27,7 @@ function getData() {
 Page({
   data: {
     id: app.createdCampaignData.id,
-    useCnt: app.createdCampaignData.useCnt,
+    playCnt: app.createdCampaignData.playCnt,
     winCnt: app.createdCampaignData.winCnt,
     loseCnt: app.createdCampaignData.loseCnt,
     miniGames: app.createdCampaignData.miniGames
@@ -37,7 +37,7 @@ Page({
     getData();
     this.setData({
       id: app.createdCampaignData.id,
-      useCnt: app.createdCampaignData.useCnt,
+      playCnt: app.createdCampaignData.playCnt,
       winCnt: app.createdCampaignData.winCnt,
       loseCnt: app.createdCampaignData.loseCnt,
       miniGames: app.createdCampaignData.miniGames
