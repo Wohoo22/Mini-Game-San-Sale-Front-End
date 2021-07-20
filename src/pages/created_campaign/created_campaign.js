@@ -25,5 +25,11 @@ Page({
   },
   onLoad() {
     getData();
+    this.setData({
+      useCnt: app.createdCampaignData.useCnt,
+      winCnt: app.createdCampaignData.winCnt,
+      loseCnt: app.createdCampaignData.loseCnt,
+      miniGames: app.createdCampaignData.miniGames
+    })
   }
 })
