@@ -9,7 +9,7 @@
 
 <view class="chosen-item">
     <label class="chosen-item-label">
-      Snake
+      {{miniGameName}}
     </label>
     <icon type="arrow_right" class="icon-arrow" color="grey"/>
 </view>
@@ -103,5 +103,5 @@
 
 <view class="blank-7"></view>
 <view class="finish-button-container">
-  <button class="finish-button">Xong</button>
+  <button class="finish-button" onTap="submit">Xong</button>
 </view>

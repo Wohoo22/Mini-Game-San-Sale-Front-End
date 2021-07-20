@@ -107,5 +107,5 @@
 <view class="blank-7"></view>
 
 <view class="finish-button-container">
-  <button class="finish-button">Tạo</button>
+  <button class="finish-button" onTap="submit">Tạo</button>
 </view>

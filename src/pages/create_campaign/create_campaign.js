@@ -20,32 +20,31 @@ Page({
     app.initCreateCampaignData();
 
 
-    addMiniGame({
-      id: '1',
-      name: 'Snake',
-      winPrizes: [],
-      losePrizes: []
-    });
-    addMiniGame({
-      id: '2',
-      name: 'Mario',
-      winPrizes: [],
-      losePrizes: []
-    });
+    // addMiniGame({
+    //   id: '1',
+    //   name: 'Snake',
+    //   winPrizes: [],
+    //   losePrizes: []
+    // });
+    // addMiniGame({
+    //   id: '2',
+    //   name: 'Mario',
+    //   winPrizes: [],
+    //   losePrizes: []
+    // });
 
     this.setData({
       miniGames: app.createCampaignData.miniGames
     });
   },
   onShow() {
-    if (app.addGameData.isSummitted) {
+    if (app.addGameData.isSummitted && app.addGameData.miniGame.id !== '') {
       addMiniGame({
         id: app.addGameData.miniGame.id,
         name: app.addGameData.miniGame.name,
         winPrizes: app.addGameData.winPrizes,
         losePrizes: app.addGameData.losePrizes
       });
-      app.initAddGameData();
       this.setData({
         miniGames: app.createCampaignData.miniGames
       });
@@ -55,5 +54,8 @@ Page({
     my.navigateTo({
       url: '/pages/add_game/add_game'
     });
+  },
+  submit() {
+    my.navigateBack();
   }
 })

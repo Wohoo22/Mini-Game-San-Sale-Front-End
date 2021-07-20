@@ -20,92 +20,53 @@
 
 <view class="blank-5"></view>
 
-<view class="game-container">
-  
-  <image src="https://cdn.tutsplus.com/mobile/uploads/legacy/Corona-SDK_Build-A-Snake-Game/2/1.png"
-  class="thumbnail"></image>
+<block tiki:for="{{miniGames}}">
 
-  <view class="game-info">
+  <view class="game-container">
+    
+    <image src="{{item.thumbnail}}"
+    class="thumbnail"></image>
 
-    <view>
-      <label class="game-info-label">Game:</label> <label>Snake</label>
-    </view>
+    <view class="game-info">
 
-    <view>
-      <label class="game-info-label">Lượt dùng:</label> <label>1243</label>
-    </view>
+      <view>
+        <label class="game-info-label">Game:</label> <label>{{item.name}}</label>
+      </view>
 
-    <view>
-      <label class="game-info-label">Lượt thích:</label> <label>1243</label>
-    </view>
+      <view>
+        <label class="game-info-label">Lượt dùng:</label> <label>{{item.useCnt}}</label>
+      </view>
 
-    <view>
-      <label class="game-info-label">Lượt không thích:</label> <label>123</label>
-    </view>
+      <view>
+        <label class="game-info-label">Lượt thích:</label> <label>{{item.likeCnt}}</label>
+      </view>
 
-    <view>
-      <label class="game-info-label">Thể loại:</label> <label>tương tác, hành động</label>
-    </view>
+      <view>
+        <label class="game-info-label">Lượt không thích:</label> <label>{{item.dislikeCnt}}</label>
+      </view>
 
-  </view>
+      <view>
+        <label class="game-info-label">Thể loại:</label> <label tiki:for="{{item.categories}}">{{item}}, </label>
+      </view>
 
-</view>
-
-<view class="blank-17"></view>
-
-<view class="add-btn-container">
-  <button class="add-btn" onTap="addGame">
-    <view class="add-label">
-      Chọn
-    </view>
-    <icon type="success" class="icon-arrow" color="white" size="20"/>
-  </button>
-</view>
-
-<view class="blank-7"></view>
-
-
-<view class="game-container">
-  
-  <image src="https://pbs.twimg.com/media/Edlq-09UEAAbOVy.jpg"
-  class="thumbnail"></image>
-
-  <view class="game-info">
-
-    <view>
-      <label class="game-info-label">Game:</label> <label>Mario</label>
-    </view>
-
-    <view>
-      <label class="game-info-label">Lượt dùng:</label> <label>1243</label>
-    </view>
-
-    <view>
-      <label class="game-info-label">Lượt thích:</label> <label>1243</label>
-    </view>
-
-    <view>
-      <label class="game-info-label">Lượt không thích:</label> <label>123</label>
-    </view>
-
-    <view>
-      <label class="game-info-label">Thể loại:</label> <label>tương tác, hành động</label>
     </view>
 
   </view>
 
-</view>
+  <view class="blank-17"></view>
 
-<view class="blank-17"></view>
+  <view class="add-btn-container">
+    <button class="add-btn" onTap="submit" id="{{item.id}}">
+      <view class="add-label">
+        Chọn
+      </view>
+      <icon type="success" class="icon-arrow" color="white" size="20"/>
+    </button>
+  </view>
 
-<view class="add-btn-container">
-  <button class="add-btn" onTap="addGame">
-    <view class="add-label">
-      Chọn
-    </view>
-    <icon type="success" class="icon-arrow" color="white" size="20"/>
-  </button>
-</view>
+  <view class="blank-7"></view>
+
+</block>
 
 <view class="blank-4"></view>
 
