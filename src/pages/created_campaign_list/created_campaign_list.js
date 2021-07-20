@@ -5,8 +5,8 @@ var endedCampaigns = [];
 
 
 function getData() {
-  this.runningCampaigns = [];
-  this.endedCampaigns = [];
+  runningCampaigns = [];
+  endedCampaigns = [];
   // fake data
   runningCampaigns.push({
     id: '114433515252343254',
