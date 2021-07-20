@@ -18,7 +18,7 @@ Page({
     runningCampaigns: runningCampaigns,
     endedCampaigns: endedCampaigns
   },
-  createdCampaign() {
+  createdCampaign(e) {
     my.navigateTo({
       url: '/pages/created_campaign/created_campaign'
     });

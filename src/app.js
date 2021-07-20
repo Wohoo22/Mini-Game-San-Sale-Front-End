@@ -73,6 +73,26 @@ function initInputDataData() {
   this.inputDataData.meta = '';
 }
 
+// ____________ created-campaign-list
+var createdCampaignListData = {
+  chosenCampaignId: '',
+};
+
+// ____________ created-campaign
+var createdCampaignData = {
+  useCnt: 0,
+  winCnt: 0,
+  loseCnt: 0,
+  miniGames: [
+    {
+      id: '',
+      winPrizes: [],
+      losePrizes: [],
+    }
+  ],
+};
+
+
 App({
   onLaunch(options) {
     // my.navigateTo({
@@ -95,4 +115,7 @@ App({
 
   inputDataData: inputDataData,
   initInputDataData: initInputDataData,
+
+  createdCampaignListData: createdCampaignListData,
+  createdCampaignData: createdCampaignData
 });
