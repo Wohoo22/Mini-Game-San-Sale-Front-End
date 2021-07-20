@@ -13,8 +13,8 @@
 <view class="blank-1"></view>
 
 <view class="add-btn-container">
-  <button class="add-btn" style="background-color: #bcbd84; border-color: #bcbd84;">
-    <view class="add-label">
+  <button class="modify-btn" style="margin-left:1%;">
+    <view class="modify-label">
       Copy
     </view>
     <icon type="plus" class="icon-arrow" color="white" size="20"/>
