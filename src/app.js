@@ -96,9 +96,9 @@ var createdCampaignData = {
 
 App({
   onLaunch(options) {
-    // my.navigateTo({
-    //   url:"pages/created_campaign/created_campaign"
-    // });
+    my.navigateTo({
+      url:"pages/join_campaign/join_campaign"
+    });
   },
   onShow(options) {
   },

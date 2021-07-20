@@ -1,0 +1,46 @@
+@import "../common.tcss";
+
+.search-box {
+  margin: auto;
+  display: block;
+  width: 98%;
+}
+
+.filter-btn-container {
+  margin-top: 2.6%;
+  margin-left: 2%;
+}
+
+.filter-btn {
+  color: black;
+  background-color: white;
+  border-color: #878787;
+  display: inline;
+  font-size:90%;
+  border-radius: 10px;
+  width: 33%;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 30%;
+  display: inline;
+  float: left;
+}
+
+.game-info {
+  display: inline;
+  width:69%;
+  float: right;
+}
+
+.game-container {
+  display: block;
+  margin-top: 3%;
+}
+
+.game-info-label {
+  margin-right: 2%;
+  color: #1a3db8;
+}
+
