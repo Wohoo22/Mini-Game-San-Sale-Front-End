@@ -5,9 +5,8 @@
 </view>
 
 <view class="chosen-item">
-  <label class="chosen-item-label">
-    {{id}}
-  </label>
+  <input class="chosen-item-label" value="{{id}}" readonly style="width:100%">
+  </input>
 </view>
 
 <view class="blank-1"></view>
