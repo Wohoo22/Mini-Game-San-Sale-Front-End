@@ -33,8 +33,8 @@ Page({
         losePrizes: app.addGameData.losePrizes,
         miniGameName: app.pickGameData.miniGame.name,
       });
+      app.initPickGameData();
     }
-
     if (app.inputDataData.isSubmitted) {
       if (app.inputDataData.meta == 'WIN')  {
         addWinPrize(app.inputDataData.text);
@@ -46,6 +46,7 @@ Page({
         losePrizes: app.addGameData.losePrizes,
         miniGameName: app.pickGameData.miniGame.name,
       });
+      app.initInputDataData();
     }
   },
   pickGame() {

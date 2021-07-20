@@ -48,6 +48,7 @@ Page({
       this.setData({
         miniGames: app.createCampaignData.miniGames
       });
+      app.initAddGameData();
     }
   },
   addGame() {
