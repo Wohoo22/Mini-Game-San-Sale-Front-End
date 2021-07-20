@@ -7,7 +7,7 @@
 <view class="blank-2"></view>
 
 <block tiki:for="{{runningCampaigns}}">
-    <view class="chosen-item"  onTap="createdCampaign">
+    <view class="chosen-item"  onTap="createdCampaign" id="{{item.id}}">
       
       <label class="chosen-item-label">
         {{item.name}}
@@ -29,7 +29,7 @@
 <view class="blank-2"></view>
 
 <block tiki:for="{{endedCampaigns}}">
-    <view class="chosen-item" onTap="createdCampaign">
+    <view class="chosen-item" onTap="createdCampaign" id="{{item.id}}">
       
       <label class="chosen-item-label">
         {{item.name}}
