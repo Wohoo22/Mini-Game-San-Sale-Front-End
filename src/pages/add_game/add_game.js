@@ -15,7 +15,7 @@ Page({
   data: {
     winPrizes: app.addGameData.winPrizes,
     losePrizes: app.addGameData.losePrizes,
-    miniGameName: app.pickGameData.miniGame.name,
+    miniGameName: app.addGameData.miniGame.name,
   },
   onLoad(query) {
     app.initAddGameData();
@@ -23,7 +23,7 @@ Page({
     this.setData({
       winPrizes: app.addGameData.winPrizes,
       losePrizes: app.addGameData.losePrizes,
-      miniGameName: app.pickGameData.miniGame.name,
+      miniGameName: app.addGameData.miniGame.name,
     });
   },
   onShow() {
@@ -33,7 +33,7 @@ Page({
       this.setData({
         winPrizes: app.addGameData.winPrizes,
         losePrizes: app.addGameData.losePrizes,
-        miniGameName: app.pickGameData.miniGame.name,
+        miniGameName: app.addGameData.miniGame.name,
       });
       app.initPickGameData();
     }
@@ -46,7 +46,7 @@ Page({
       this.setData({
         winPrizes: app.addGameData.winPrizes,
         losePrizes: app.addGameData.losePrizes,
-        miniGameName: app.pickGameData.miniGame.name,
+        miniGameName: app.addGameData.miniGame.name,
       });
       app.initInputDataData();
     }

@@ -12,7 +12,7 @@ async function getUserId() {
 Page({
   async onLoad() {
     var userId = await getUserId();
-    app.globalData.userId = userId;
+    // app.globalData.userId = userId;
   },
   onShow() {
     if (app.inputDataData.isSubmitted) {
