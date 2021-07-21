@@ -42,6 +42,33 @@ Page({
     });
   },
   submit() {
+    var req = {
+      id: '',
+      name: app.createCampaignData.name,
+      expireAt: app.createCampaignData.expireAt === '' ? '2021-07-21T16:49:21.787Z' : app.createCampaignData.expireAt,
+      playCount: 0,
+      winCount: 0,
+      loseCount: 0,
+      miniGames: []
+    };
+
+    for (var game of app.createCampaignData.miniGames) {
+      req.miniGames.push({
+        id: game.id,
+        uuid: '',
+        winPrizes: game.winPrizes,
+        losePrizes: game.losePrizes
+      });
+    }
+
+    console.log(req);
+
     my.navigateBack();
+  },
+  setName(e) {
+    app.createCampaignData.name = e.detail.value;
+  },
+  setExpireAt(e) {
+    app.createCampaignData.expireAt = e.detail.value;
   }
 })

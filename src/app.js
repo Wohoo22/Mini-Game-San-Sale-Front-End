@@ -1,6 +1,7 @@
 // ____________ global
 var globalData = {
   userId : '',
+  server: 'http://localhost:8080'
 }
 
 

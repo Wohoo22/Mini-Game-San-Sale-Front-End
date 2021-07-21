@@ -9,11 +9,11 @@
 <view class="input-area">
 
   <view class="input-box-container">
-  <input type="text" placeholder="Ngày hết hạn" class="input-box"></input>
+  <input type="text" placeholder="Ngày hết hạn" class="input-box" value="2021-07-21T16:49:21.787Z" onInput="setExpireAt"></input>
   </view>
 
   <view class="input-description">
-    Theo định dạng "ngày-tháng-năm"
+    Theo định dạng "năm-tháng-ngày"
   </view>
 
 </view>
@@ -29,7 +29,7 @@
 <view class="input-area">
 
   <view class="input-box-container">
-  <input type="text" placeholder="Nhập tên" class="input-box"></input>
+  <input type="text" placeholder="Nhập tên" class="input-box" onInput="setName"></input>
   </view>
 
   <view class="input-description">
