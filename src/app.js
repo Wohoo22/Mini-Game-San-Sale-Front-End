@@ -1,5 +1,7 @@
 // ____________ global
-
+var globalData = {
+  userId : '',
+}
 
 
 // ____________ index

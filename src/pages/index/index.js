@@ -5,16 +5,14 @@ function getCampaign(id) {
   return {};
 }
 
+async function getUserId() {
+  return '';
+}
+
 Page({
   async onLoad() {
-    await my.getAuthCode({
-      success: (res) => {
-        console.log("OK");
-      },
-      fail: (res) => {
-        console.log("FALSE");
-      }
-    });
+    var userId = await getUserId();
+    app.globalData.userId = userId;
   },
   onShow() {
     if (app.inputDataData.isSubmitted) {
