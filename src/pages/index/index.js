@@ -6,11 +6,22 @@ function getCampaign(id) {
 }
 
 Page({
+  async onLoad() {
+    await my.getAuthCode({
+      success: (res) => {
+        console.log("OK");
+      },
+      fail: (res) => {
+        console.log("FALSE");
+      }
+    });
+  },
   onShow() {
     if (app.inputDataData.isSubmitted) {
       var id = app.inputDataData.text;
       var campaign = getCampaign(id);
       if (campaign != null) {
+        app.indexData.joinCampaignId = id;
         my.navigateTo({
           url: "pages/join_campaign/join_campaign"
         });

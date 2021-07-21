@@ -1,3 +1,7 @@
+// ____________ global
+
+
+
 // ____________ index
 
 var indexData = {

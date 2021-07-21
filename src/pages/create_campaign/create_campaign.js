@@ -15,23 +15,8 @@ Page({
     miniGames: app.createCampaignData.miniGames,
   },
   onLoad(query) {
-
     app.initAddGameData();
     app.initCreateCampaignData();
-
-
-    // addMiniGame({
-    //   id: '1',
-    //   name: 'Snake',
-    //   winPrizes: [],
-    //   losePrizes: []
-    // });
-    // addMiniGame({
-    //   id: '2',
-    //   name: 'Mario',
-    //   winPrizes: [],
-    //   losePrizes: []
-    // });
 
     this.setData({
       miniGames: app.createCampaignData.miniGames

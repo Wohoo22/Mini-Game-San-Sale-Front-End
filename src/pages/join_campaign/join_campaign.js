@@ -1,17 +1,18 @@
 var app = getApp();
 
 var processedData = {
-  name,
-  expireAt,
-  playCnt,
-  winCnt,
-  loseCnt,
+  id: '',
+  name: '',
+  expireAt: '',
+  playCnt: 0,
+  winCnt: 0,
+  loseCnt: 0,
   miniGames: [{
-    id,
-    uuid,
-    name,
-    likeCnt,
-    dislikeCnt,
+    id: '',
+    uuid: '',
+    name: '',
+    likeCnt: 0,
+    dislikeCnt: 0,
     categories: []
   }]
 };
@@ -19,6 +20,7 @@ var processedData = {
 function getData() {
   // fake data
   processedData = {
+    id: '19n3i1yhd03',
     name: 'Săn sale tháng 7',
     expireAt: '30/7/2021',
     playCnt: 145,
@@ -44,16 +46,17 @@ function getData() {
     }]
   }
   // call api
+  var campaignId = app.indexData.joinCampaignId;
 }
 
 Page({
   data: {
-    data: processedData
+    processedData: processedData,
   },
   onLoad() {
     getData();
     this.setData({
-      data: processedData,
+      processedData: processedData,
     })
   }
-});
+})

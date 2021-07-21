@@ -1,6 +1,76 @@
 <view class="blank-2"></view>
 
-<block tiki:for="{{data.miniGames}}">
+
+<view class="label">
+  Thông tin
+</view>
+
+<view class="blank-2"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Mã
+  </label>
+
+  <label class="chosen-item-value">{{processedData.id}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Tên
+  </label>
+
+  <label class="chosen-item-value">{{processedData.name}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Lượng người chơi
+  </label>
+
+  <label class="chosen-item-value">{{processedData.playCnt}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Lượt thắng
+  </label>
+
+  <label class="chosen-item-value">{{processedData.winCnt}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Lượt thua
+  </label>
+
+  <label class="chosen-item-value">{{processedData.loseCnt}}</label>
+</view>
+
+<view class="blank-7"></view>
+
+
+<view class="label">
+  Mini game
+</view>
+
+
+<block tiki:for="{{processedData.miniGames}}">
 
   <view class="game-container">
     
@@ -33,14 +103,14 @@
 
   </view>
 
-  <view class="blank-17"></view>
+  <view class="blank-23"></view>
 
   <view class="add-btn-container">
     <button class="add-btn" onTap="submit" id="{{item.id}}">
       <view class="add-label">
-        Chọn
+        Chơi
       </view>
-      <icon type="success" class="icon-arrow" color="white" size="20"/>
+      <icon type="arrow_right" class="icon-arrow" color="white" size="20"/>
     </button>
   </view>
 
