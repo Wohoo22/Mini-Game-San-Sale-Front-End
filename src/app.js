@@ -58,7 +58,7 @@ function initAddGameData() {
 // ____________ pick-game
 
 var pickGameData = {
-  isSummitted: false,
+  isSubmitted: false,
   miniGame: {
       id: '',
       name: ''

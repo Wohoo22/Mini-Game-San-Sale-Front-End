@@ -27,7 +27,7 @@ Page({
     miniGames: miniGames
   },
   onLoad(query) {
-    app.initInputDataData();
+    app.initPickGameData();
   },
   submit(e) {
     var id = e.target.id;
@@ -42,11 +42,13 @@ Page({
     app.pickGameData.miniGame.id = id;
     app.pickGameData.miniGame.name = name;
 
+    var lstPage = getCurrentPages()[getCurrentPages().length-2];
+    my.navigateBack();
     try {
-      getCurrentPages()[getCurrentPages().length-2].onShow();
+      lstPage.onShow();
     } catch(err) {
       console.log(err);
     }
-    my.navigateBack();
+    app.initPickGameData();
   }
 })

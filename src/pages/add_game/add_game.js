@@ -1,11 +1,13 @@
 var app = getApp();
 
 function addWinPrize(prize) {
-  app.addGameData.winPrizes.push(prize);
+  if (prize != '')
+    app.addGameData.winPrizes.push(prize);
 }
 
 function addLosePrize(prize) {
-  app.addGameData.losePrizes.push(prize);
+  if (prize != '')
+    app.addGameData.losePrizes.push(prize);
 }
 
 
