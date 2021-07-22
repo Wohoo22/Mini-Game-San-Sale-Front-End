@@ -56,12 +56,12 @@ async function getData(id) {
         break;
       }
     }
-     app.createdCampaignData.miniGames.push({
+    app.createdCampaignData.miniGames.push({
        id: g.id,
        name: name,
        winPrizes: g.winPrizes,
        losePrizes: g.losePrizes,
-     });
+    });
   }
 }
 
@@ -73,10 +73,10 @@ Page({
     loseCnt: app.createdCampaignData.loseCnt,
     miniGames: app.createdCampaignData.miniGames
   },
-  onLoad() {
+  async onLoad() {
     app.initCreatedCampaignData();
     app.createdCampaignData.id = app.createdCampaignListData.chosenCampaignId;
-    getData(app.createdCampaignData.id);
+    await getData(app.createdCampaignData.id);
     this.setData({
       id: app.createdCampaignData.id,
       playCnt: app.createdCampaignData.playCnt,
