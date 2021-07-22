@@ -34,15 +34,15 @@
       </view>
 
       <view>
-        <label class="game-info-label">Lượt dùng:</label> <label>{{item.useCnt}}</label>
+        <label class="game-info-label">Lượt dùng:</label> <label>{{item.useCount}}</label>
       </view>
 
       <view>
-        <label class="game-info-label">Lượt thích:</label> <label>{{item.likeCnt}}</label>
+        <label class="game-info-label">Lượt thích:</label> <label>{{item.likeCount}}</label>
       </view>
 
       <view>
-        <label class="game-info-label">Lượt không thích:</label> <label>{{item.dislikeCnt}}</label>
+        <label class="game-info-label">Lượt không thích:</label> <label>{{item.dislikeCount}}</label>
       </view>
 
       <view>

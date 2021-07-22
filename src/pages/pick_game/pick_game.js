@@ -1,33 +1,46 @@
 var app = getApp();
 
-var miniGames = [
-  {
-    id:'1',
-    name: 'Snake',
-    thumbnail: 'https://cdn.tutsplus.com/mobile/uploads/legacy/Corona-SDK_Build-A-Snake-Game/2/1.png',
-    useCnt: 189,
-    likeCnt: 391,
-    dislikeCnt: 43,
-    categories: ['Hanh dong', 'Phieu luu']
-  },
-  {
-    id:'2',
-    name: 'Mario',
-    thumbnail: 'https://pbs.twimg.com/media/Edlq-09UEAAbOVy.jpg',
-    useCnt: 189,
-    likeCnt: 391,
-    dislikeCnt: 43,
-    categories: ['Hanh dong', 'Phieu luu']
-  }
-];
+// var miniGames = [
+//   {
+//     id:'1',
+//     name: 'Snake',
+//     thumbnail: 'https://cdn.tutsplus.com/mobile/uploads/legacy/Corona-SDK_Build-A-Snake-Game/2/1.png',
+//     useCnt: 189,
+//     likeCnt: 391,
+//     dislikeCnt: 43,
+//     categories: ['Hanh dong', 'Phieu luu']
+//   },
+//   {
+//     id:'2',
+//     name: 'Mario',
+//     thumbnail: 'https://pbs.twimg.com/media/Edlq-09UEAAbOVy.jpg',
+//     useCnt: 189,
+//     likeCnt: 391,
+//     dislikeCnt: 43,
+//     categories: ['Hanh dong', 'Phieu luu']
+//   }
+// ];
+
+var miniGames = [];
+
+async function getMiniGames() {
+  var resp = await app.httpGet(
+    app.globalData.server + '/minigame/list'
+  );
+  miniGames = resp;
+}
 
 
 Page({
   data: {
     miniGames: miniGames
   },
-  onLoad(query) {
+  async onLoad(query) {
+    await getMiniGames();
     app.initPickGameData();
+    this.setData({
+      miniGames: miniGames
+    });
   },
   submit(e) {
     var id = e.target.id;
