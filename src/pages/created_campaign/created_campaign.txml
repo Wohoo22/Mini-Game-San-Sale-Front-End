@@ -1,6 +1,36 @@
 <view class="blank-2"></view>
 
 <view class="label">
+  Thông tin
+</view>
+
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Tên
+  </label>
+
+  <label class="chosen-item-value">{{name}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
+    Ngày hết hạn
+  </label>
+
+  <label class="chosen-item-value">{{expireAt}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="blank-5"></view>
+
+
+<view class="label">
   Mã tham gia 
 </view>
 

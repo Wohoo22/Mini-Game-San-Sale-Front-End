@@ -101,6 +101,7 @@ async function getData() {
         uuid: uuid,
         name: g.name,
         thumbnail: g.thumbnail,
+        useCnt: g.useCount,
         likeCnt: g.likeCount,
         dislikeCnt: g.dislikeCount,
         categories: g.categoryIds

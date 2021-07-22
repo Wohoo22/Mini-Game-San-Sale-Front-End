@@ -33,6 +33,17 @@
 <view class="chosen-item">
   
   <label class="chosen-item-label">
+    Ngày hết hạn
+  </label>
+
+  <label class="chosen-item-value">{{processedData.expireAt}}</label>
+</view>
+
+<view class="blank-1"></view>
+
+<view class="chosen-item">
+  
+  <label class="chosen-item-label">
     Lượng người chơi
   </label>
 

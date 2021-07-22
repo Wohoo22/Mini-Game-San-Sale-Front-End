@@ -141,6 +141,8 @@ var createdCampaignListData = {
 // ____________ created-campaign
 var createdCampaignData = {
   id: '',
+  name: '',
+  expireAt: '',
   playCnt: 0,
   winCnt: 0,
   loseCnt: 0,
@@ -155,6 +157,8 @@ var createdCampaignData = {
 
 function initCreatedCampaignData() {
   this.createdCampaignData.id = '';
+  this.createdCampaignData.name = '';
+  this.createdCampaignData.expireAt = '';
   this.createdCampaignData.playCnt = 0;
   this.createdCampaignData.winCnt = 0;
   this.createdCampaignData.loseCnt = 0;

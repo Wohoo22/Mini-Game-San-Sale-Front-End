@@ -32,6 +32,8 @@ async function getData(id) {
   );
   campaignData = campaignData[0];
 
+  app.createdCampaignData.name = campaignData.name;
+  app.createdCampaignData.expireAt = campaignData.expireAt;
   app.createdCampaignData.playCnt = campaignData.playCount;
   app.createdCampaignData.winCnt = campaignData.winCount;
   app.createdCampaignData.loseCnt = campaignData.loseCount;
@@ -68,6 +70,8 @@ async function getData(id) {
 Page({
   data: {
     id: app.createdCampaignData.id,
+    name: app.createdCampaignData.name,
+    expireAt: app.createdCampaignData.expireAt,
     playCnt: app.createdCampaignData.playCnt,
     winCnt: app.createdCampaignData.winCnt,
     loseCnt: app.createdCampaignData.loseCnt,
@@ -79,6 +83,8 @@ Page({
     await getData(app.createdCampaignData.id);
     this.setData({
       id: app.createdCampaignData.id,
+      name: app.createdCampaignData.name,
+      expireAt: app.createdCampaignData.expireAt,
       playCnt: app.createdCampaignData.playCnt,
       winCnt: app.createdCampaignData.winCnt,
       loseCnt: app.createdCampaignData.loseCnt,
