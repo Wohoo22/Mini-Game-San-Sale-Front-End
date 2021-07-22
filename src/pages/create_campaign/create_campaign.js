@@ -53,15 +53,16 @@ Page({
     };
 
     for (var game of app.createCampaignData.miniGames) {
-      createCampaignReq.miniGames.push({
-        id: game.id,
-        uuid: '',
-        winPrizes: game.winPrizes,
-        losePrizes: game.losePrizes
-      });
+      if (game.id != '') {
+        createCampaignReq.miniGames.push({
+          id: game.id,
+          uuid: '',
+          winPrizes: game.winPrizes,
+          losePrizes: game.losePrizes
+        });
+      }
     }
     
-
     var createCampainResp = await app.httpPost(
       app.globalData.server + '/campaign', 
       createCampaignReq

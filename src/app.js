@@ -153,6 +153,13 @@ var createdCampaignData = {
   ],
 };
 
+function initCreatedCampaignData() {
+  this.createdCampaignData.id = '';
+  this.createdCampaignData.playCnt = 0;
+  this.createdCampaignData.winCnt = 0;
+  this.createdCampaignData.loseCnt = 0;
+  this.createdCampaignData.miniGames = [];
+}
 
 App({
   async onLaunch(options) {
@@ -187,5 +194,7 @@ App({
   initInputDataData: initInputDataData,
 
   createdCampaignListData: createdCampaignListData,
-  createdCampaignData: createdCampaignData
+
+  createdCampaignData: createdCampaignData,
+  initCreatedCampaignData: initCreatedCampaignData
 });
