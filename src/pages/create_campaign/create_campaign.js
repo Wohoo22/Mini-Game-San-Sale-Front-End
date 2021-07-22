@@ -41,8 +41,8 @@ Page({
       url: '/pages/add_game/add_game'
     });
   },
-  submit() {
-    var req = {
+  async submit() {
+    var createCampaignReq = {
       id: '',
       name: app.createCampaignData.name,
       expireAt: app.createCampaignData.expireAt === '' ? '2021-07-21T16:49:21.787Z' : app.createCampaignData.expireAt,
@@ -53,15 +53,27 @@ Page({
     };
 
     for (var game of app.createCampaignData.miniGames) {
-      req.miniGames.push({
+      createCampaignReq.miniGames.push({
         id: game.id,
         uuid: '',
         winPrizes: game.winPrizes,
         losePrizes: game.losePrizes
       });
     }
+    
 
-    console.log(req);
+    var createCampainResp = await app.httpPost(
+      app.globalData.server + '/campaign', 
+      createCampaignReq
+    );
+    app.httpPost(
+      app.globalData.server + '/user/' + app.globalData.userId + '/add-campaign-ids',
+      {
+        ids: [
+          createCampainResp.id
+        ]
+      }
+    );
 
     my.navigateBack();
   },

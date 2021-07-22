@@ -1,7 +1,54 @@
+async function httpPost(url, body) {
+  return await new Promise(
+    (resolve, reject) => {
+      my.request({
+        url: url,
+        method: 'POST',
+        headers:{
+          'content-type': 'application/json',
+          'charset' : 'utf-8'
+        },
+        data: body,
+        success: (response) => {
+          resolve(response);
+        },
+        fail: (response) => {
+          console.log(response);
+          reject(response);
+        }
+      });
+    }
+  );
+}
+
+async function httpGet(url) {
+  return await new Promise(
+    (resolve, reject) => {
+      my.request({
+        url: url,
+        method: 'GET',
+        success: (response) => {
+          resolve(response);
+        },
+        fail: (response) => {
+          console.log(response);
+          reject(response);
+        }
+      });
+    }
+  );
+}
+
+
 // ____________ global
+
 var globalData = {
   userId : '',
-  server: 'http://localhost:8080'
+  server: 'https://jloxinteractive.nextshop.dev'
+}
+
+async function getUserId() {
+  globalData.userId = '60f966910c03195448845cc9';
 }
 
 
@@ -108,13 +155,20 @@ var createdCampaignData = {
 
 
 App({
-  onLaunch(options) {
+  async onLaunch(options) {
+    await getUserId();
     // my.navigateTo({
     //   url:"pages/join_campaign/join_campaign"
     // });
   },
   onShow(options) {
   },
+  globalData: globalData,
+
+  // util
+
+  httpPost: httpPost,
+  httpGet: httpGet,
 
   // page data
 
