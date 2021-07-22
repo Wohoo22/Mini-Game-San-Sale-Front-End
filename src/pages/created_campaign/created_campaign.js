@@ -90,5 +90,20 @@ Page({
       loseCnt: app.createdCampaignData.loseCnt,
       miniGames: app.createdCampaignData.miniGames
     })
+  },
+  async deleteCampaign(e) {
+    var campaignData = await app.httpPost(
+      app.globalData.server + '/campaign/delete',
+      {
+        ids: [app.createdCampaignData.id],
+      }
+    );
+    var lstPage = getCurrentPages()[getCurrentPages().length-2];
+    my.navigateBack();
+    try {
+      lstPage.onShow();
+    } catch(err) {
+      console.log(err);
+    }
   }
 })

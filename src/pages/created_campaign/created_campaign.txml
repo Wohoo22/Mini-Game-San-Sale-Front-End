@@ -224,6 +224,6 @@
   <button class="finish-button">Cập nhật chương trình</button>
 </view>
 
-<view class="finish-button-container">
+<view class="finish-button-container" onTap="deleteCampaign">
   <button class="finish-button">Xóa chương trình</button>
 </view>
