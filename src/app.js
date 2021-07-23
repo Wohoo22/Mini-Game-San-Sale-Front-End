@@ -47,10 +47,6 @@ var globalData = {
   server: 'https://jloxinteractive.nextshop.dev'
 }
 
-async function getUserId() {
-  globalData.userId = '60f966910c03195448845cc9';
-}
-
 
 // ____________ index
 
@@ -167,7 +163,6 @@ function initCreatedCampaignData() {
 
 App({
   async onLaunch(options) {
-    await getUserId();
     // my.navigateTo({
     //   url:"pages/join_campaign/join_campaign"
     // });

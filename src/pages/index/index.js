@@ -6,12 +6,31 @@ function getCampaign(id) {
 }
 
 async function getUserId() {
-  return '';
+  app.globalData.userId = '60f966910c03195448845cc9';
+  await my.getUserInfo({
+      success: (res) => {
+        var id = '';
+        if (res.customerId) {
+          app.globalData.userId = res.customerId;
+        }
+      },
+      fail: (res) => {}
+  });
+
+  var res = await app.httpPost(
+    app.globalData.server + '/user',
+    {
+      desiredId:  app.globalData.userId,
+      email: '',
+      prizes: [],
+      campaignIds: [],
+    }
+  );
 }
 
 Page({
   async onLoad() {
-    var userId = await getUserId();
+    await getUserId();
     // app.globalData.userId = userId;
   },
   onShow() {
