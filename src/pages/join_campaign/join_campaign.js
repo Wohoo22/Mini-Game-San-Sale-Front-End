@@ -88,24 +88,44 @@ async function getData() {
     }
   );
 
-  for (var g of gameInfo) {
-    var uuid = '';
-    for (var mg of campaignData.miniGames) {
-      if (mg.id == g.id) {
-        uuid = mg.uuid;
+  // for (var g of gameInfo) {
+  //   var uuid = '';
+  //   for (var mg of campaignData.miniGames) {
+  //     if (mg.id == g.id) {
+  //       uuid = mg.uuid;
+  //       break;
+  //     }
+  //   }
+  //   processedData.miniGames.push({
+  //       id: g.id,
+  //       uuid: uuid,
+  //       name: g.name,
+  //       thumbnail: g.thumbnail,
+  //       useCnt: g.useCount,
+  //       likeCnt: g.likeCount,
+  //       dislikeCnt: g.dislikeCount,
+  //       categories: g.categoryIds
+  //   })
+  // }
+
+  for (var game of campaignData.miniGames) {
+    var info = {};
+    for (var gi of gameInfo) {
+      if (gi.id == game.id) {
+        info = gi;
         break;
       }
     }
     processedData.miniGames.push({
-        id: g.id,
-        uuid: uuid,
-        name: g.name,
-        thumbnail: g.thumbnail,
-        useCnt: g.useCount,
-        likeCnt: g.likeCount,
-        dislikeCnt: g.dislikeCount,
-        categories: g.categoryIds
-    })
+        id: game.id,
+        uuid: game.uuid,
+        name: info.name,
+        thumbnail: info.thumbnail,
+        useCnt: info.useCount,
+        likeCnt: info.likeCount,
+        dislikeCnt: info.dislikeCount,
+        categories: info.categoryIds
+    });
   }
 }
 
