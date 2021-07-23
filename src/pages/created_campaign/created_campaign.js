@@ -127,6 +127,10 @@ Page({
         isUser: false,
       }
     };
+
+    console.log("Setting mini game request:");
+    console.log(req);
+
     my.navigateToMiniApp({
       req,
       success() {

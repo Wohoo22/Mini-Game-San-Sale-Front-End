@@ -160,6 +160,10 @@ Page({
         isUser: true,
       }
     };
+
+    console.log("Play mini game request:");
+    console.log(req);
+
     my.navigateToMiniApp({
       req,
       success() {
