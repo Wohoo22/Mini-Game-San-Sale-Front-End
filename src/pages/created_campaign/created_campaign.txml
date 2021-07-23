@@ -125,7 +125,7 @@
       <icon type="minus" class="icon-arrow" color="white" size="20"/>
     </button>
 
-    <button class="modify-btn" style="margin-left:1%;">
+    <button class="modify-btn" style="margin-left:1%;" id="{{item.uuid}}" onTap="goSetting">
       <view class="modify-label">
         Cài đặt
       </view>

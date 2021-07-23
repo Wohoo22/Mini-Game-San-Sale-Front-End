@@ -83,5 +83,7 @@ Page({
   },
   setExpireAt(e) {
     app.createCampaignData.expireAt = e.detail.value;
+  },
+  goSetting(e) {
   }
 })

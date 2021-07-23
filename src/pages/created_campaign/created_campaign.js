@@ -60,6 +60,7 @@ async function getData(id) {
     }
     app.createdCampaignData.miniGames.push({
        id: g.id,
+       uuid: g.uuid,
        name: name,
        winPrizes: g.winPrizes,
        losePrizes: g.losePrizes,
@@ -105,5 +106,33 @@ Page({
     } catch(err) {
       console.log(err);
     }
+  },
+  goSetting(e) {
+    var uuid = e.target.id;
+    var gameId = '';
+    for (var g of app.createdCampaignData.miniGames) {
+      if (g.uuid == uuid) {
+        gameId = g.id;
+        break;
+      }
+    }
+    var campaignId = app.createdCampaignData.id;
+
+    var req = {
+      appId: gameId,
+      path: 'pages/index/index',
+      extraData: {
+        campaignId: campaignId,
+        uuid: uuid,
+        isUser: false,
+      }
+    };
+    my.navigateToMiniApp({
+      req,
+      success() {
+      },
+      fail(err) {
+      }
+    });
   }
 })

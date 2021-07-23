@@ -12,18 +12,19 @@ Page({
   },
   async onLoad() {
     this.props.userId = '60f966910c03195448845cc9';
-    await my.getUserInfo({
-        success: (res) => {
-          var id = '';
-          if (res.customerId) {
-            this.props.userId = res.customerId;
-          }
-          this.props.userId = "rand" + Math.random() * 90;
-        },
-        fail: (res) => {}
-    });
+
+    // my.getUserInfo({
+    //     success: (res) => {
+    //       var id = '';
+    //       if (res.customerId) {
+    //         this.props.userId = res.customerId;
+    //       }
+    //       this.props.userId = "rand" + Math.random() * 90;
+    //     },
+    //     fail: (res) => {}
+    // });
+    
     app.globalData.userId = this.props.userId;
-    console.log(app.globalData.userId );
     var res = await app.httpPost(
       app.globalData.server + '/user',
       {

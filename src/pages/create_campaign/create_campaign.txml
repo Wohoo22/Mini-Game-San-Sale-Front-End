@@ -79,7 +79,7 @@
     </view>
 
     <view class="modify-btn-container">
-      <button class="modify-btn">
+      <button class="modify-btn" id="{{item.id}}" onTap="goSetting">
         <view class="modify-label">
           Cài đặt
         </view>
