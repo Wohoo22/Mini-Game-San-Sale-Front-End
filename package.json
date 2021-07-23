@@ -1,6 +1,6 @@
 {
   "name": "mini-game-san-sale",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "tiki": {
     "appIdentifier": "vn.tiki.hackathon.minigamesansale",
     "buildNumber": 1

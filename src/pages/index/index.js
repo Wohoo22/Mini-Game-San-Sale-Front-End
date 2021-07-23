@@ -11,7 +11,7 @@ Page({
     userId: ''
   },
   async onLoad() {
-    this.props.userId = '60f966910c03195448845cc9';
+    this.props.userId = '60faee8182c29b621b73dbb4';
 
     // my.getUserInfo({
     //     success: (res) => {

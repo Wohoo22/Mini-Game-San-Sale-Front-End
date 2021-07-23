@@ -93,6 +93,13 @@ Page({
     })
   },
   async deleteCampaign(e) {
+    app.httpPost(
+      app.globalData.server + '/user/' + app.globalData.userId + '/delete-campaign-ids',
+      {
+        ids: [app.createdCampaignData.id],
+      }
+    );
+
     var campaignData = await app.httpPost(
       app.globalData.server + '/campaign/delete',
       {
