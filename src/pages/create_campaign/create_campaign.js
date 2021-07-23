@@ -85,16 +85,16 @@ Page({
     app.createCampaignData.expireAt = e.detail.value;
   },
   goSetting(e) {
-    // my.navigateToMiniApp({
-    //     appId: gameId,
-    //     path: 'pages/owner/create/index',
-    //     extraData: {
-    //       campaignId: campaignId,
-    //       uuid: uuid,
-    //       isUser: false,
-    //     },
-    //     success: () => {},
-    //     fail: () => {}
-    // });
+    my.navigateToMiniApp({
+        appId: "vn.tiki.hackathon.minigamesansale.quiz",
+        path: 'pages/owner/create/index',
+        extraData: {
+          campaignId: campaignId,
+          uuid: uuid,
+          isUser: false,
+        },
+        success: () => {},
+        fail: () => {}
+    });
   }
 })
