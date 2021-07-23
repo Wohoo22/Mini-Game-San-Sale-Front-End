@@ -73,7 +73,7 @@
   <label class="chosen-item-value">{{processedData.loseCnt}}</label>
 </view>
 
-<view class="blank-7"></view>
+<view class="blank-4"></view>
 
 
 <view class="label">
@@ -114,7 +114,7 @@
 
   </view>
 
-  <view class="blank-23"></view>
+  <view class="blank-11"></view>
 
   <view class="add-btn-container">
     <button class="add-btn" id="{{item.uuid}}" onTap="goPlay">
@@ -125,7 +125,7 @@
     </button>
   </view>
 
-  <view class="blank-7"></view>
+  <view class="blank-4"></view>
 
 </block>
 

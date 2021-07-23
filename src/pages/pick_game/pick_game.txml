@@ -14,11 +14,11 @@
   <button class="filter-btn">Lượt thích</button>
 </view>
 
-<view class="blank-2"></view>
+<view class="blank-1"></view>
 
 <button class="middle-btn">Tìm kiếm</button>
 
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 
 <block tiki:for="{{miniGames}}">
 
@@ -53,7 +53,7 @@
 
   </view>
 
-  <view class="blank-17"></view>
+  <view class="blank-2"></view>
 
   <view class="add-btn-container">
     <button class="add-btn" onTap="submit" id="{{item.id}}">
@@ -64,12 +64,12 @@
     </button>
   </view>
 
-  <view class="blank-7"></view>
+  <view class="blank-3"></view>
 
 </block>
 
-<view class="blank-4"></view>
+<view class="blank-2"></view>
 
 <button class="middle-btn">Tải thêm</button>
 
-<view class="blank-3"></view>
+<view class="blank-2"></view>

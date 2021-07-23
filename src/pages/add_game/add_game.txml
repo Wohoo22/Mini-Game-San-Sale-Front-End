@@ -1,11 +1,11 @@
-<view class="blank-2"></view>
+<view class="blank-1"></view>
 
 <view class="label">
   MINI GAME ĐANG CHỌN
 </view>
 
 
-<view class="blank-2"></view>
+<view class="blank-1"></view>
 
 <view class="chosen-item">
     <label class="chosen-item-label">
@@ -21,13 +21,13 @@
 </button>
 
 
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 
 <view class="label">
   PHẦN THƯỞNG KHI THẮNG (MÃ GIẢM GIÁ)
 </view>
 
-<view class="blank-2"></view>
+<view class="blank-1"></view>
 
 <block tiki:for="{{winPrizes}}">
   <view class="chosen-item">
@@ -62,13 +62,13 @@
 </view>
 
 
-<view class="blank-5"></view> 
+<view class="blank-3"></view> 
 
 <view class="label">
   PHẦN THƯỞNG KHI THUA (MÃ GIẢM GIÁ)
 </view>
 
-<view class="blank-2"></view>
+<view class="blank-1"></view>
 
 <block tiki:for="{{losePrizes}}">
   <view class="chosen-item">
@@ -101,7 +101,7 @@
 </view>
 
 
-<view class="blank-7"></view>
+<view class="blank-5"></view>
 <view class="finish-button-container">
   <button class="finish-button" onTap="submit">Xong</button>
 </view>

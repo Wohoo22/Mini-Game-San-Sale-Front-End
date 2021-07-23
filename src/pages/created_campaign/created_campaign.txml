@@ -4,6 +4,7 @@
   Thông tin
 </view>
 
+<view class="blank-1"></view>
 
 <view class="chosen-item">
   
@@ -27,12 +28,14 @@
 
 <view class="blank-1"></view>
 
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 
 
 <view class="label">
   Mã tham gia 
 </view>
+
+<view class="blank-1"></view>
 
 <view class="chosen-item">
   <input class="chosen-item-label" value="{{id}}" readonly style="width:100%">
@@ -51,7 +54,7 @@
 </view>
 
 
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 
 <view class="label">
   Thống kê
@@ -91,7 +94,7 @@
   <label class="chosen-item-value">{{loseCnt}}</label>
 </view>
 
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 
 <view class="label">
   Thông tin mini game
@@ -205,7 +208,7 @@
     </button>
   </view>
 
-  <view class="blank-10"></view>
+  <view class="blank-5"></view>
 </block>
 
 
@@ -218,7 +221,7 @@
   </button>
 </view>
 
-<view class="blank-10"></view>
+<view class="blank-4"></view>
 
 <view class="finish-button-container" style="border-bottom: 1px solid #bfbfbf;">
   <button class="finish-button">Cập nhật chương trình</button>
