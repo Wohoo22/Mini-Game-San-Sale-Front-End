@@ -117,7 +117,7 @@
   <view class="blank-23"></view>
 
   <view class="add-btn-container">
-    <button class="add-btn" onTap="submit" id="{{item.id}}">
+    <button class="add-btn" id="{{item.uuid}}" onTap="goPlay">
       <view class="add-label">
         Chơi
       </view>

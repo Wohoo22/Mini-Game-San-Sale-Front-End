@@ -92,7 +92,7 @@ async function getData() {
     var uuid = '';
     for (var mg of campaignData.miniGames) {
       if (mg.id == g.id) {
-        uuid = mg.id;
+        uuid = mg.uuid;
         break;
       }
     }
@@ -118,5 +118,34 @@ Page({
     this.setData({
       processedData: processedData,
     })
+  },
+  goPlay(e) {
+    var uuid = e.target.id;
+    var gameId = '';
+    for (var g of processedData.miniGames) {
+      if (g.uuid == uuid) {
+        gameId = g.id;
+        break;
+      }
+    }
+
+    var campaignId = processedData.id;
+
+    var req = {
+      appId: gameId,
+      path: 'pages/index/index',
+      extraData: {
+        campaignId: campaignId,
+        uuid: uuid,
+        isUser: true,
+      }
+    };
+    my.navigateToMiniApp({
+      req,
+      success() {
+      },
+      fail(err) {
+      }
+    });
   }
 })
