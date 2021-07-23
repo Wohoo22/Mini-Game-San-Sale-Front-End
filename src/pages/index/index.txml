@@ -7,20 +7,20 @@
   </view>
 </view>
 
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 <button class="button" onTap="createCampaign">
   Tạo chương trình
 </button>
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 <button class="button" onTap="createdCampaignList">
   Chương trình đã tạo
 </button>
-<view class="blank-5"></view>
+<view class="blank-3"></view>
 <button class="button" onTap="joinCampaign">
   Tham gia bằng mã
 </button>
 
-<view class="blank-7"></view>
+<view class="blank-4"></view>
 <view class="detail">
   Thông tin chi tiết
 </view>
