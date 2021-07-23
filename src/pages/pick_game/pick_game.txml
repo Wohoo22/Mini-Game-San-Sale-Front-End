@@ -53,7 +53,7 @@
 
   </view>
 
-  <view class="blank-2"></view>
+  <view class="blank-11"></view>
 
   <view class="add-btn-container">
     <button class="add-btn" onTap="submit" id="{{item.id}}">
