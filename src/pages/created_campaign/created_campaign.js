@@ -127,7 +127,7 @@ Page({
 
     my.navigateToMiniApp({
         appId: gameId,
-        path: 'pages/index/index',
+        path: 'pages/owner/edit/index',
         extraData: {
           campaignId: campaignId,
           uuid: uuid,
