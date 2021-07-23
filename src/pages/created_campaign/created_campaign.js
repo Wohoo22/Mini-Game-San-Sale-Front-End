@@ -107,7 +107,7 @@ Page({
       console.log(err);
     }
   },
-  goSetting(e) {
+  navigateToMiniApp(e) {
     var uuid = e.target.id;
     var gameId = '';
     for (var g of app.createdCampaignData.miniGames) {
@@ -118,25 +118,16 @@ Page({
     }
     var campaignId = app.createdCampaignData.id;
 
-    var req = {
-      appId: gameId,
-      path: 'pages/index/index',
-      extraData: {
-        campaignId: campaignId,
-        uuid: uuid,
-        isUser: false,
-      }
-    };
-
-    console.log("Setting mini game request:");
-    console.log(req);
-
     my.navigateToMiniApp({
-      req,
-      success() {
-      },
-      fail(err) {
-      }
+        appId: gameId,
+        path: 'pages/index/index',
+        extraData: {
+          campaignId: campaignId,
+          uuid: uuid,
+          isUser: false,
+        },
+        success: () => {},
+        fail: () => {}
     });
   }
 })

@@ -161,6 +161,7 @@ function initCreatedCampaignData() {
   this.createdCampaignData.miniGames = [];
 }
 
+
 App({
   async onLaunch(options) {
     // my.navigateTo({

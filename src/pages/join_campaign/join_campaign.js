@@ -139,7 +139,7 @@ Page({
       processedData: processedData,
     })
   },
-  goPlay(e) {
+  navigateToMiniApp(e) {
     var uuid = e.target.id;
     var gameId = '';
     for (var g of processedData.miniGames) {
@@ -148,28 +148,18 @@ Page({
         break;
       }
     }
-
     var campaignId = processedData.id;
 
-    var req = {
+    my.navigateToMiniApp({
       appId: gameId,
       path: 'pages/index/index',
       extraData: {
         campaignId: campaignId,
         uuid: uuid,
         isUser: true,
-      }
-    };
-
-    console.log("Play mini game request:");
-    console.log(req);
-
-    my.navigateToMiniApp({
-      req,
-      success() {
       },
-      fail(err) {
-      }
+      success: () => {},
+      fail: () => {}
     });
   }
 })

@@ -128,7 +128,7 @@
       <icon type="minus" class="icon-arrow" color="white" size="20"/>
     </button>
 
-    <button class="modify-btn" style="margin-left:1%;" id="{{item.uuid}}" onTap="goSetting">
+    <button class="modify-btn" style="margin-left:1%;" id="{{item.uuid}}" onTap="navigateToMiniApp">
       <view class="modify-label">
         Cài đặt
       </view>
